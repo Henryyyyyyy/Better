@@ -13,7 +13,7 @@
 ![img](https://github.com/Henryyyyyyy/Better/blob/master/art/222.gif)
 ![img](https://github.com/Henryyyyyyy/Better/blob/master/art/333.gif)
 
-## features
+## Features
 
 - 基于aidl多进程的音乐播放器
 - 反射+注解 打造的数据库框架
