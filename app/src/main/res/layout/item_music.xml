@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:id="@+id/rlContent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="8dp"
+    android:paddingTop="8dp"
+    android:paddingRight="8dp">
+
+    <ImageView
+        android:id="@+id/ivCover"
+        android:layout_width="54dp"
+        android:layout_height="54dp"
+        android:src="@mipmap/icon_music_default" />
+    <TextView
+        android:id="@+id/tvName"
+        android:layout_width="wrap_content"
+        android:text="越吻越伤心"
+        android:layout_toRightOf="@+id/ivCover"
+        android:layout_marginLeft="5dp"
+        android:singleLine="true"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/tvSinger"
+        android:layout_width="wrap_content"
+        android:text="Madilyn"
+        android:layout_toRightOf="@+id/ivCover"
+        android:layout_marginLeft="5dp"
+        android:layout_alignBottom="@+id/ivCover"
+        android:textColor="@color/gray"
+        android:textSize="12sp"
+        android:layout_height="wrap_content" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:layout_below="@+id/ivCover"
+        android:layout_marginTop="5dp"
+        android:background="@color/light_gray"
+        />
+</RelativeLayout>

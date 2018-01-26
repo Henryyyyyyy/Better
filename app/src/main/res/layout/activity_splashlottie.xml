@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="me.henry.versatile.activity.SplashlottieActivity">
+    <!--<com.airbnb.lottie.LottieAnimationView-->
+        <!--android:id="@+id/animation_view"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:visibility="gone"-->
+        <!--app:lottie_loop="true"-->
+        <!--app:lottie_autoPlay="true" />-->
+    <TextView
+        android:id="@+id/tvaddone"
+        android:text="添加1"
+        android:layout_width="wrap_content"
+      android:layout_centerHorizontal="true"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:layout_below="@+id/tvaddone"
+        android:id="@+id/tvaddtwo"
+        android:text="添加2"
+        android:layout_marginTop="40dp"
+        android:layout_width="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/tvmodify"
+        android:layout_marginTop="40dp"
+
+        android:text="修改"
+        android:layout_below="@+id/tvaddtwo"
+
+
+        android:layout_width="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/tvdelete"
+        android:layout_marginTop="40dp"
+        android:layout_below="@+id/tvmodify"
+
+        android:text="删除"
+        android:layout_width="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/tvquery"
+        android:text="查询"
+        android:layout_marginTop="40dp"
+        android:layout_below="@+id/tvdelete"
+
+        android:layout_width="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_height="wrap_content" />
+
+
+</RelativeLayout>

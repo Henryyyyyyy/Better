@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <me.henry.versatilev2.vtitlebar.TitleBar
+        android:id="@+id/mTitleBar"
+        android:clipToPadding="true"
+        android:fitsSystemWindows="true"
+        android:layout_width="match_parent"
+        android:background="@drawable/title_background"
+        android:layout_height="56dp">
+
+    </me.henry.versatilev2.vtitlebar.TitleBar>
+
+
+
+    <android.support.v7.widget.ContentFrameLayout
+        android:id="@+id/cf_3block_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/mTitleBar">
+
+    </android.support.v7.widget.ContentFrameLayout>
+
+    <me.henry.versatilev2.floattab.FloatTab
+        android:id="@+id/ft_menu"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="70dp"
+        app:menu="@menu/menu_tab_bar"
+
+        />
+
+</RelativeLayout>
