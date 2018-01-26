@@ -42,6 +42,7 @@ public class MyVApp extends Application {
                 //指定为经典Footer
                 ClassicsFooter footer = new ClassicsFooter(context);
                 footer.setDrawableSize(20);
+                //a
                 footer.setArrowBitmap(null);//设置箭头位图
 
                 return footer;
