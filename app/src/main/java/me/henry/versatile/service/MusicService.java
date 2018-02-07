@@ -34,8 +34,8 @@ public class MusicService extends Service {
     public static MediaPlayer mPlayer = new MediaPlayer();
     public static int currentIndex = 0;
     public static MusicInfo currentMusicInfo = null;
-    public List<MusicInfo> mMusicList = new ArrayList<>();
-    public List<MusicInfo> mNormalList=new ArrayList<>();//用来保存原有的顺序
+    public List<MusicInfo> mMusicContainerList = new ArrayList<>();
+    public List<MusicInfo> mPlayList=new ArrayList<>();//用来保存原有的顺序
     public BroadcastReceiver mMusicBroadCast;
     public int mMode = VConstants.PlayMode_Loop;
     public AudioManager mAudioManager;
@@ -48,9 +48,9 @@ public class MusicService extends Service {
             public void onReceive(Context context, Intent intent) {
                 Log.e("miao","action name="+intent.getAction());
                 if (intent.getAction().equals(VConstants.Action_updateMusicList)) {
-                    mMusicList = intent.getParcelableArrayListExtra("musiclist");
-                    mNormalList.clear();
-                    mNormalList.addAll(mMusicList);
+                    mMusicContainerList = intent.getParcelableArrayListExtra("musiclist");//中介运输
+                    mPlayList.clear();
+                    mPlayList.addAll(mMusicContainerList);
                 }
                 //处理拔出耳机的事件
                 if (intent.getAction().equals(AudioManager.ACTION_AUDIO_BECOMING_NOISY)){
@@ -110,7 +110,7 @@ public class MusicService extends Service {
                 Utils.sendUpdatePlayState(MusicService.this, false);
             } else {
                 if (currentIndex==0){
-                    playMusic(mNormalList.get(0),0);
+                    playMusic(mPlayList.get(0),0);
                 }else {
 
                 mPlayer.start();
@@ -136,16 +136,17 @@ public class MusicService extends Service {
                 try {
                     mPlayer.reset();
                     currentIndex++;
-                    if (currentIndex > mNormalList.size() - 1) {
+                    if (currentIndex > mPlayList.size() - 1) {
                         currentIndex = 0;
                     }//如果next到最后一首就重新来
 
-                  if (currentIndex>mNormalList.size()-1){currentIndex=mNormalList.size()-1;}//预防删除很多歌后currentindex溢出
-                    mPlayer.setDataSource(mNormalList.get(currentIndex).data);
+                  if (currentIndex>mPlayList.size()-1){currentIndex=mPlayList.size()-1;}//预防删除很多歌后currentindex溢出
+                    mPlayer.setDataSource(mPlayList.get(currentIndex).data);
                     mPlayer.prepare();
                     mPlayer.seekTo(0);
+                    mPlayer.seekTo(0);
                     mPlayer.start();
-                    currentMusicInfo = mNormalList.get(currentIndex);
+                    currentMusicInfo = mPlayList.get(currentIndex);
                     notifyChanges(VConstants.Action_updateMusicInfo);
                 } catch (Exception e) {
                     e.printStackTrace();
@@ -162,14 +163,14 @@ public class MusicService extends Service {
                     if (currentIndex != 0) {
                         currentIndex--;//如果已经减到第一首了，就不给它继续减下去
                     } else {
-                        currentIndex = mNormalList.size() - 1;
+                        currentIndex = mPlayList.size() - 1;
                     }
                     Log.e(TAG, "previous(),currentIndex=" + currentIndex);
-                    mPlayer.setDataSource(mNormalList.get(currentIndex).data);
+                    mPlayer.setDataSource(mPlayList.get(currentIndex).data);
                     mPlayer.prepare();
                     mPlayer.seekTo(0);
                     mPlayer.start();
-                    currentMusicInfo = mNormalList.get(currentIndex);
+                    currentMusicInfo = mPlayList.get(currentIndex);
                     notifyChanges(VConstants.Action_updateMusicInfo);
                 } catch (Exception e) {
                     e.printStackTrace();
@@ -202,7 +203,8 @@ public class MusicService extends Service {
                     mPlayer.prepare();
                     mPlayer.seekTo(0);
                     mPlayer.start();
-                    currentMusicInfo = mNormalList.get(currentIndex);
+                    //假如点击了随机播放，mplayerlist顺序跟原来的不一样了，所以取数据也会不一样，所以要按照刚刚从数据库拿出来的数据顺序
+                    currentMusicInfo = mMusicContainerList.get(currentIndex);
                     notifyChanges(VConstants.Action_updateMusicInfo);
                     Utils.sendUpdatePlayState(MusicService.this, true);
 
@@ -219,18 +221,18 @@ public class MusicService extends Service {
             mMode = mode;
 
             if (mode == VConstants.PlayMode_Shuffle) {
-                Collections.shuffle(mNormalList);
-                for (int i = 0; i < mNormalList.size(); i++) {//将洗牌前的currentindex变成当前的currentindex
-                    if (mNormalList.get(i).songId == currentMusicInfo.songId) {
+                Collections.shuffle(mPlayList);
+                for (int i = 0; i < mPlayList.size(); i++) {//将洗牌前的currentindex变成当前的currentindex
+                    if (mPlayList.get(i).songId == currentMusicInfo.songId) {
                         currentIndex = i;
                     }
                 }
             } else {
-                if (mNormalList != null&&mNormalList.size()>0) {
-                    mNormalList.clear();
-                    mNormalList.addAll(mNormalList);
-                    for (int i = 0; i < mNormalList.size(); i++) {
-                        if (mNormalList.get(i).songId == currentMusicInfo.songId) {
+                if (mPlayList != null&&mPlayList.size()>0) {
+                    mPlayList.clear();
+                    mPlayList.addAll(mMusicContainerList);
+                    for (int i = 0; i < mPlayList.size(); i++) {
+                        if (mPlayList.get(i).songId == currentMusicInfo.songId) {
                             currentIndex = i;
                         }
                     }

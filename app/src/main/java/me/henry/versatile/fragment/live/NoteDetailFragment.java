@@ -187,17 +187,17 @@ public class NoteDetailFragment extends VFragment implements View.OnClickListene
 
         mCalendarPager.setAdapter(calendarAdapter);
         mCalendarPager.setCurrentItem(MonthPager.CURRENT_DAY_INDEX);
+
     }
 
     @Override
     public void onClick(View view) {
-        switch (view.getId()){
+        switch (view.getId()) {
             case R.id.iv_go:
                 mCalendarPager.setCurrentItem(mCalendarPager.getCurrentPosition() + 1);
-
                 break;
             case R.id.iv_previous:
-                mCalendarPager.setCurrentItem(mCalendarPager.getCurrentPosition() -1);
+                mCalendarPager.setCurrentItem(mCalendarPager.getCurrentPosition() - 1);
                 break;
         }
     }

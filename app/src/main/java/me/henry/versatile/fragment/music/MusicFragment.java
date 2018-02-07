@@ -149,8 +149,6 @@ public class MusicFragment extends VFragment implements View.OnClickListener {
 
     private void freshMusicPanel(MusicInfo info) {
         if (info != null) {
-            Log.e("haha", "MusicInfo=" + info.toString());
-
             tvCurMusicName.setText(info.musicName);
             tvCurMusicSinger.setText(info.artist);
             GlideApp.with(this)
@@ -181,12 +179,10 @@ public class MusicFragment extends VFragment implements View.OnClickListener {
     }
 
     private void initBrocast() {
-        Log.e("haha","init bro");
 
         mMusicBro = new BroadcastReceiver() {
             @Override
             public void onReceive(Context context, Intent intent) {
-                Log.e("haha","action="+intent.getAction().toLowerCase());
                 if (intent.getAction().equals(VConstants.Action_updateMusicInfo)) {
                     currentMusicInfo = intent.getParcelableExtra("music");
                     freshMusicPanel(currentMusicInfo);
