@@ -2,16 +2,11 @@ package me.henry.versatile.api;
 
 import android.os.Environment;
 
-import java.io.File;
+import com.example.lib_native_net.Request;
+import com.example.lib_native_net.RequestManager;
+import com.example.lib_native_net.callback.StringCallback;
 
 import me.henry.versatile.fragment.gank.GankType;
-import me.henry.versatile.model.video.VideoModel;
-import me.henry.versatile.nativenet.Request;
-import me.henry.versatile.nativenet.RequestManager;
-import me.henry.versatile.nativenet.callback.JsonArrayReaderCallback;
-import me.henry.versatile.nativenet.callback.JsonCallback;
-import me.henry.versatile.nativenet.callback.StringCallback;
-import me.henry.versatile.utils.CanuteLog;
 
 /**
  * Created by henry on 2018/1/26.

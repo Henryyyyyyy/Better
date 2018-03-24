@@ -1,1 +1,1 @@
-include ':app', ':calendar', ':materialcalendar', ':floattab', ':vtitlebar'
+include ':app', ':calendar', ':materialcalendar', ':floattab', ':vtitlebar', ':lib_native_net', ':lib_db'

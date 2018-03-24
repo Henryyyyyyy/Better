@@ -4,7 +4,7 @@
     android:layout_height="wrap_content"
     android:padding="5dp">
 
-    <me.henry.versatile.view.RatioImageView
+    <me.henry.versatile.view.scaleimageview.RatioImageView
         android:id="@+id/ivMeiZhi"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

@@ -12,7 +12,6 @@ import com.chad.library.adapter.base.BaseViewHolder;
 import java.util.List;
 
 import me.henry.versatile.R;
-import me.henry.versatile.base.GlideApp;
 import me.henry.versatile.model.video.VideoModel;
 import me.henry.versatile.view.video.CustomVideoView;
 import me.henry.versatile.view.video.XueErVideoView;
@@ -31,7 +30,7 @@ public class VideoAdapter extends BaseQuickAdapter<VideoModel, BaseViewHolder> {
 
     @Override
     protected void convert(BaseViewHolder helper, VideoModel item) {
-        GlideApp.with(mContext)
+        Glide.with(mContext)
                 .load(item.getAuthor().getIcon())
                 .placeholder(R.mipmap.ic_launcher)
                 .into((ImageView) helper.getView(R.id.iv_author_avatar));

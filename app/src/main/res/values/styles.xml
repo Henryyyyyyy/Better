@@ -1,20 +1,6 @@
 <resources>
 
-    <!-- Base application theme. -->
-    <!--<style name="AppTheme" parent="AppTheme.Base">-->
-    <!--&lt;!&ndash; Customize your theme here. &ndash;&gt;-->
 
-    <!--</style>-->
-    <!--<style name="AppTheme.Base" parent="Theme.AppCompat">-->
-    <!--<item name="windowActionBar">false</item>-->
-    <!--<del><item name="android:windowNoTitle">true</item></del>-->
-    <!--&lt;!&ndash; 使用 API Level 22 編譯的話，要拿掉前綴字 &ndash;&gt;-->
-    <!--<item name="windowNoTitle">true</item>-->
-
-    <!--<item name="colorPrimary">@color/colorPrimary</item>-->
-    <!--<item name="colorPrimaryDark">@color/colorPrimaryDark</item>-->
-    <!--<item name="colorAccent">@color/colorAccent</item>-->
-    <!--</style>-->
     <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
         <item name="colorPrimary">#2e8abb</item> <!--浅蓝色-->
         <item name="colorPrimaryDark">#3A5FCD</item> <!--深蓝色-->
@@ -48,5 +34,11 @@
         <item name="android:colorBackgroundCacheHint">@null</item>
         <item name="android:windowIsTranslucent">true</item>
         <item name="android:windowAnimationStyle">@android:style/Animation</item>
+    </style>
+    <style name="SwipeBackLayout">
+        <item name="edge_size">100dip</item>
+        <item name="shadow_left">@mipmap/shadow_left</item>
+        <item name="shadow_right">@mipmap/shadow_right</item>
+        <item name="shadow_bottom">@mipmap/shadow_bottom</item>
     </style>
 </resources>

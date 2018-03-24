@@ -15,6 +15,7 @@ import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 
+import com.bumptech.glide.Glide;
 import com.chad.library.adapter.base.BaseQuickAdapter;
 
 import java.util.ArrayList;
@@ -26,7 +27,6 @@ import me.henry.versatile.R;
 import me.henry.versatile.activity.MainActivity;
 import me.henry.versatile.adapter.MusicAdapter;
 import me.henry.versatile.app.VConstants;
-import me.henry.versatile.base.GlideApp;
 import me.henry.versatile.base.VFragment;
 import me.henry.versatile.model.music.MusicInfo;
 import me.henry.versatile.service.MusicPlayer;
@@ -151,7 +151,7 @@ public class MusicFragment extends VFragment implements View.OnClickListener {
         if (info != null) {
             tvCurMusicName.setText(info.musicName);
             tvCurMusicSinger.setText(info.artist);
-            GlideApp.with(this)
+            Glide.with(this)
                     .load(MusicUtil.getAlbumArtUri(info.albumId))
                     .placeholder(R.mipmap.icon_music_default)
                     .into(ivCurMusicCover);

@@ -12,17 +12,15 @@ import android.util.AttributeSet;
 import android.view.Surface;
 import android.view.TextureView;
 import android.view.View;
-import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.ProgressBar;
 import android.widget.RelativeLayout;
-import android.widget.TextView;
+
+import com.bumptech.glide.Glide;
 
 import me.henry.versatile.R;
-import me.henry.versatile.base.GlideApp;
 import me.henry.versatile.utils.CanuteLog;
 import me.henry.versatile.utils.DimenUtil;
-import me.henry.versatile.view.CanuteLoader;
 
 /**
  * Created by henry on 2017/12/27.
@@ -245,7 +243,7 @@ public class XueErVideoView extends RelativeLayout implements TextureView.Surfac
 
     public void setCover(String url) {
         if (iv_cover != null) {
-            GlideApp.with(mContext)
+            Glide.with(mContext)
                     .load(url)
                     .into(iv_cover);
         }

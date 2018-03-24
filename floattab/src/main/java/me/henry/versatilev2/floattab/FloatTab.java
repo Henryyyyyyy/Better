@@ -25,7 +25,6 @@ import android.view.animation.BounceInterpolator;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 
-import org.jetbrains.annotations.NotNull;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -541,7 +540,7 @@ public class FloatTab extends LinearLayout {
     public static final class SavedState extends BaseSavedState {
         int selection = 0;
 
-        public SavedState(@NotNull Parcelable superState) {
+        public SavedState( Parcelable superState) {
             super(superState);
         }
 
@@ -556,10 +555,10 @@ public class FloatTab extends LinearLayout {
             out.writeInt(selection);
         }
 
-        @NotNull
+         
         public static final Creator CREATOR = (Creator) (new Creator() {
-            @NotNull
-            public FloatTab.SavedState createFromParcel(@NotNull Parcel source) {
+
+            public FloatTab.SavedState createFromParcel( Parcel source) {
                 return new FloatTab.SavedState(source);
             }
 

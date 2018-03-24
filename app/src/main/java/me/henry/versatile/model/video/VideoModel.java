@@ -2,11 +2,13 @@ package me.henry.versatile.model.video;
 
 import android.util.JsonReader;
 
+import com.example.lib_native_net.entities.JsonReaderable;
+import com.example.lib_native_net.error.AppException;
+
 import java.io.IOException;
 import java.io.Serializable;
 
-import me.henry.versatile.nativenet.entities.JsonReaderable;
-import me.henry.versatile.nativenet.error.AppException;
+
 import me.henry.versatile.utils.CanuteLog;
 
 /**

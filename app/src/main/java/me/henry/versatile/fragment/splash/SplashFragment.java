@@ -4,26 +4,20 @@ import android.os.Bundle;
 import android.os.Handler;
 import android.support.annotation.Nullable;
 import android.util.Log;
-import android.view.MenuItem;
 import android.view.View;
-import android.widget.TextView;
-import android.widget.Toast;
 
 
-import org.jetbrains.annotations.NotNull;
+import com.example.lib_db.DBManager;
 
 import java.util.ArrayList;
 
-import butterknife.BindView;
 import me.henry.versatile.R;
 import me.henry.versatile.base.VFragment;
-import me.henry.versatile.db.DBManager;
-import me.henry.versatile.db.DatabaseHelper;
+
+import me.henry.versatile.base.DatabaseHelper;
 import me.henry.versatile.fragment.Mainfragment;
 import me.henry.versatile.model.note.Note;
 import me.henry.versatile.model.note.Punch;
-import me.henry.versatile.utils.TimeUtil;
-import me.henry.versatilev2.floattab.FloatTab;
 
 /**
  * Created by henry on 2017/11/22.
@@ -50,7 +44,9 @@ public class SplashFragment extends VFragment {
         }, 1500);
 
         DBManager.init(getMainActivity(), new DatabaseHelper(getMainActivity()));
-
+//        initFakeData1();
+//        initFakeData2();
+//        initFakeData3();
     }
 
     private void initFakeData3() {

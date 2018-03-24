@@ -8,12 +8,11 @@ import android.widget.TextView;
 
 //import com.airbnb.lottie.LottieAnimationView;
 
+import com.example.lib_db.DBManager;
+
 import java.util.ArrayList;
 
 import me.henry.versatile.R;
-import me.henry.versatile.db.DBManager;
-import me.henry.versatile.db.DatabaseHelper;
-import me.henry.versatile.db.core.DBUtil;
 import me.henry.versatile.model.note.Note;
 import me.henry.versatile.model.note.Punch;
 

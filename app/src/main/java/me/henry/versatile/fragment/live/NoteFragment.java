@@ -16,6 +16,7 @@ import android.widget.Toast;
 import com.afollestad.materialdialogs.DialogAction;
 import com.afollestad.materialdialogs.MaterialDialog;
 import com.chad.library.adapter.base.BaseQuickAdapter;
+import com.example.lib_db.DBManager;
 
 import java.util.ArrayList;
 import java.util.Calendar;
@@ -24,8 +25,7 @@ import butterknife.BindView;
 import me.henry.versatile.R;
 import me.henry.versatile.adapter.NoteAdapter;
 import me.henry.versatile.base.VFragment;
-import me.henry.versatile.base.web.WebFragment;
-import me.henry.versatile.db.DBManager;
+
 import me.henry.versatile.model.note.Note;
 import me.henry.versatile.model.note.Punch;
 

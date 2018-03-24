@@ -2,15 +2,15 @@ package me.henry.versatile.api;
 
 import android.os.Environment;
 
+import com.example.lib_native_net.Request;
+import com.example.lib_native_net.RequestManager;
+import com.example.lib_native_net.callback.JsonArrayReaderCallback;
+
 import java.io.File;
 import java.util.ArrayList;
 
 import me.henry.versatile.model.video.VideoModel;
-import me.henry.versatile.nativenet.Request;
-import me.henry.versatile.nativenet.RequestManager;
-import me.henry.versatile.nativenet.callback.JsonArrayReaderCallback;
-import me.henry.versatile.nativenet.error.AppException;
-import me.henry.versatile.nativenet.itf.ICallback;
+
 import me.henry.versatile.utils.CanuteLog;
 
 /**

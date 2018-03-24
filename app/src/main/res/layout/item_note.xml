@@ -94,7 +94,7 @@
             android:layout_height="130dp"
             android:layout_below="@+id/rl_centerlayer"
             android:layout_marginBottom="5dp"
-            android:layout_toLeftOf="@id/rl_extreme">
+            android:layout_toLeftOf="@+id/rl_extreme">
 
         </com.github.mikephil.charting.charts.LineChart>
 

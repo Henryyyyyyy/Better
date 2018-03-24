@@ -1,10 +1,12 @@
 package me.henry.versatile.model.note;
 
+import com.example.lib_db.annotation.Column;
+import com.example.lib_db.annotation.Table;
+
 import java.io.Serializable;
 import java.util.ArrayList;
 
-import me.henry.versatile.db.annotation.Column;
-import me.henry.versatile.db.annotation.Table;
+
 
 /**
  * Created by henry on 2018/1/5.

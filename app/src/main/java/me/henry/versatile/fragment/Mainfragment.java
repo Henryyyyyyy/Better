@@ -20,7 +20,6 @@ import android.widget.Toast;
 
 import com.gyf.barlibrary.ImmersionBar;
 
-import org.jetbrains.annotations.NotNull;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
@@ -66,7 +65,7 @@ public class Mainfragment extends VFragment {
 
         ft_menu.setOnFoldingItemClickListener(new FloatTab.OnFoldingItemSelectedListener() {
             @Override
-            public boolean onFoldingItemSelected(@NotNull MenuItem item) {
+            public boolean onFoldingItemSelected( MenuItem item) {
                 int goIndex = 0;
                 switch (item.getItemId()) {
                     case R.id.ftb_menu_nearby:

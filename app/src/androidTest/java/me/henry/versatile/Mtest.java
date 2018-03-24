@@ -5,7 +5,7 @@ import android.test.AndroidTestCase;
 import org.junit.Test;
 
 import me.henry.versatile.db.DBManager;
-import me.henry.versatile.db.DatabaseHelper;
+import me.henry.versatile.base.DatabaseHelper;
 import me.henry.versatile.model.note.Note;
 
 /**

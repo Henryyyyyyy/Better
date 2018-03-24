@@ -14,7 +14,7 @@ import com.chad.library.adapter.base.BaseViewHolder;
 import java.util.List;
 
 import me.henry.versatile.R;
-import me.henry.versatile.base.GlideApp;
+
 import me.henry.versatile.model.music.MusicInfo;
 import me.henry.versatile.utils.music.MusicUtil;
 
@@ -34,7 +34,7 @@ public class MusicAdapter extends BaseQuickAdapter<MusicInfo,MusicAdapter.MusicH
         helper.tvName.setText(item.musicName);
         helper.tvSinger.setText(item.artist);
         helper.addOnClickListener(R.id.rlContent);
-        GlideApp.with(mContext)
+        Glide.with(mContext)
                 .load(MusicUtil.getAlbumArtUri(item.albumId))
                 .placeholder(R.mipmap.icon_music_default)
                 .into(helper.ivCover);

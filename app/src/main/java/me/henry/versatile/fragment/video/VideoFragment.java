@@ -6,6 +6,8 @@ import android.view.View;
 
 import com.chad.library.adapter.base.BaseQuickAdapter;
 import com.chad.library.adapter.base.animation.AlphaInAnimation;
+import com.example.lib_native_net.callback.JsonArrayReaderCallback;
+import com.example.lib_native_net.error.AppException;
 
 import java.util.ArrayList;
 
@@ -14,9 +16,7 @@ import me.henry.versatile.adapter.VideoAdapter;
 import me.henry.versatile.api.VideoApi;
 import me.henry.versatile.base.RefreshListFragment;
 import me.henry.versatile.model.video.VideoModel;
-import me.henry.versatile.nativenet.callback.JsonArrayReaderCallback;
-import me.henry.versatile.nativenet.error.AppException;
-import me.henry.versatile.utils.CanuteLog;
+
 import me.henry.versatile.view.video.XueErVideoView;
 
 /**

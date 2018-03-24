@@ -9,6 +9,8 @@ import android.view.View;
 
 import com.alibaba.fastjson.JSON;
 import com.chad.library.adapter.base.BaseQuickAdapter;
+import com.example.lib_native_net.callback.StringCallback;
+import com.example.lib_native_net.error.AppException;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -20,9 +22,7 @@ import me.henry.versatile.base.RefreshListFragment;
 import me.henry.versatile.base.web.WebFragment;
 import me.henry.versatile.model.gank.GankData;
 import me.henry.versatile.model.gank.GankJsonModel;
-import me.henry.versatile.nativenet.callback.JsonCallback;
-import me.henry.versatile.nativenet.callback.StringCallback;
-import me.henry.versatile.nativenet.error.AppException;
+
 import me.henry.versatile.utils.CanuteLog;
 
 /**
