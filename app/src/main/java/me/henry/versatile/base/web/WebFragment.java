@@ -14,8 +14,8 @@ import butterknife.BindView;
 import me.henry.versatile.R;
 import me.henry.versatile.app.Canute;
 import me.henry.versatile.base.VFragment;
-import me.henry.versatile.fragment.gank.GankDetailFragment;
-import me.henry.versatilev2.vtitlebar.TitleBar;
+import me.henry.versatile.view.titlebar.TitleBar;
+
 
 /**
  * Created by henry on 2017/12/19.

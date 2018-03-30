@@ -31,8 +31,9 @@ import me.henry.versatile.fragment.live.NoteFragment;
 import me.henry.versatile.fragment.music.MusicFragment;
 import me.henry.versatile.fragment.video.VideoFragment;
 
+import me.henry.versatile.view.titlebar.TitleBar;
 import me.henry.versatilev2.floattab.FloatTab;
-import me.henry.versatilev2.vtitlebar.TitleBar;
+
 import me.yokeyword.fragmentation.ISupportFragment;
 
 

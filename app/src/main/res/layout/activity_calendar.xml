@@ -5,13 +5,13 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
   >
-    <me.henry.versatilev2.vtitlebar.TitleBar
+    <me.henry.versatile.view.titlebar.TitleBar
         android:id="@+id/titleBar"
         android:layout_width="match_parent"
         android:background="@drawable/title_background"
         android:layout_height="60dp">
 
-    </me.henry.versatilev2.vtitlebar.TitleBar>
+    </me.henry.versatile.view.titlebar.TitleBar>
     <com.ldf.calendar.view.MonthPager
         android:id="@+id/calendarPager"
         android:layout_below="@+id/titleBar"

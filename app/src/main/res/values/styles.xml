@@ -6,6 +6,14 @@
         <item name="colorPrimaryDark">#3A5FCD</item> <!--深蓝色-->
        <item name="colorAccent">@color/colorAccent</item>
     </style>
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:launchMode">singleTop</item>
+        <item name="android:configChanges">orientation|keyboardHidden|screenSize</item>
+        <item name="android:screenOrientation">portrait</item>
+    </style>
     <style name="AppTheme.NoBar">
         <item name="windowNoTitle">true</item>
         <item name="android:windowFullscreen">true</item>

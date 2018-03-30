@@ -27,7 +27,8 @@ import me.henry.versatile.base.web.WebFragment;
 import me.henry.versatile.model.note.Note;
 import me.henry.versatile.model.note.Punch;
 import me.henry.versatile.view.calendar.CustomDayView;
-import me.henry.versatilev2.vtitlebar.TitleBar;
+import me.henry.versatile.view.titlebar.TitleBar;
+
 
 /**
  * Created by henry on 2018/1/13.

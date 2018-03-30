@@ -4,7 +4,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical">
 
-    <me.henry.versatilev2.vtitlebar.TitleBar
+    <me.henry.versatile.view.titlebar.TitleBar
         android:id="@+id/mTitleBar"
         android:layout_width="match_parent"
         android:layout_height="56dp"
@@ -12,7 +12,7 @@
         android:clipToPadding="true"
         android:fitsSystemWindows="true">
 
-    </me.henry.versatilev2.vtitlebar.TitleBar>
+    </me.henry.versatile.view.titlebar.TitleBar>
 
     <ScrollView
         android:layout_width="match_parent"

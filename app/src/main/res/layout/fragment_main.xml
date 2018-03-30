@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical">
 
-    <me.henry.versatilev2.vtitlebar.TitleBar
+    <me.henry.versatile.view.titlebar.TitleBar
         android:id="@+id/mTitleBar"
         android:clipToPadding="true"
         android:fitsSystemWindows="true"
@@ -14,7 +14,7 @@
         android:background="@drawable/title_background"
         android:layout_height="56dp">
 
-    </me.henry.versatilev2.vtitlebar.TitleBar>
+    </me.henry.versatile.view.titlebar.TitleBar>
 
 
 
