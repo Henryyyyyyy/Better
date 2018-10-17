@@ -3,13 +3,20 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/Better.iml" filepath="$PROJECT_DIR$/Better.iml" />
-      <module fileurl="file://$PROJECT_DIR$/Versatile.iml" filepath="$PROJECT_DIR$/Versatile.iml" />
+      <module fileurl="file://D:\zjlearningdata\better\Better\Better.iml" filepath="D:\zjlearningdata\better\Better\Better.iml" />
+      <module fileurl="file://D:\zjlearningdata\better\Better\Versatile.iml" filepath="D:\zjlearningdata\better\Better\Versatile.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://D:\zjlearningdata\better\Better\app\app.iml" filepath="D:\zjlearningdata\better\Better\app\app.iml" />
       <module fileurl="file://$PROJECT_DIR$/calendar/calendar.iml" filepath="$PROJECT_DIR$/calendar/calendar.iml" />
+      <module fileurl="file://D:\zjlearningdata\better\Better\calendar\calendar.iml" filepath="D:\zjlearningdata\better\Better\calendar\calendar.iml" />
       <module fileurl="file://$PROJECT_DIR$/floattab/floattab.iml" filepath="$PROJECT_DIR$/floattab/floattab.iml" />
+      <module fileurl="file://D:\zjlearningdata\better\Better\floattab\floattab.iml" filepath="D:\zjlearningdata\better\Better\floattab\floattab.iml" />
       <module fileurl="file://$PROJECT_DIR$/lib_db/lib_db.iml" filepath="$PROJECT_DIR$/lib_db/lib_db.iml" />
+      <module fileurl="file://D:\zjlearningdata\better\Better\lib_db\lib_db.iml" filepath="D:\zjlearningdata\better\Better\lib_db\lib_db.iml" />
       <module fileurl="file://$PROJECT_DIR$/lib_native_net/lib_native_net.iml" filepath="$PROJECT_DIR$/lib_native_net/lib_native_net.iml" />
+      <module fileurl="file://D:\zjlearningdata\better\Better\lib_native_net\lib_native_net.iml" filepath="D:\zjlearningdata\better\Better\lib_native_net\lib_native_net.iml" />
       <module fileurl="file://$PROJECT_DIR$/vtitlebar/vtitlebar.iml" filepath="$PROJECT_DIR$/vtitlebar/vtitlebar.iml" />
+      <module fileurl="file://D:\zjlearningdata\better\Better\vtitlebar\vtitlebar.iml" filepath="D:\zjlearningdata\better\Better\vtitlebar\vtitlebar.iml" />
     </modules>
   </component>
 </project>
