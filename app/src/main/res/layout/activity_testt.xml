@@ -4,6 +4,6 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="me.example.tess.lib_baseopensource.TestActivity">
+    tools:context="me.henry.versatile.test.TesttActivity">
 
 </android.support.constraint.ConstraintLayout>

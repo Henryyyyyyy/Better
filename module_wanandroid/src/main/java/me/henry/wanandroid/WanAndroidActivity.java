@@ -5,7 +5,7 @@ import android.os.Bundle;
 
 import com.alibaba.android.arouter.facade.annotation.Route;
 
-@Route(path = "/test/WanAndroidActivity")
+@Route(path = "/test/wan")
 public class WanAndroidActivity extends AppCompatActivity {
 
     @Override

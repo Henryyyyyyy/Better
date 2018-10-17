@@ -4,8 +4,9 @@
     <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
         <item name="colorPrimary">#2e8abb</item> <!--浅蓝色-->
         <item name="colorPrimaryDark">#3A5FCD</item> <!--深蓝色-->
-       <item name="colorAccent">@color/colorAccent</item>
+        <item name="colorAccent">@color/colorAccent</item>
     </style>
+
     <style name="AppTheme.NoActionBar">
         <item name="windowActionBar">false</item>
         <item name="windowNoTitle">true</item>
@@ -14,10 +15,12 @@
         <item name="android:configChanges">orientation|keyboardHidden|screenSize</item>
         <item name="android:screenOrientation">portrait</item>
     </style>
+
     <style name="AppTheme.NoBar">
         <item name="windowNoTitle">true</item>
         <item name="android:windowFullscreen">true</item>
     </style>
+
     <style name="dialog" parent="@android:style/Theme.Dialog">
         <!--去掉边框-->
         <item name="android:windowFrame">@null</item>
@@ -43,10 +46,15 @@
         <item name="android:windowIsTranslucent">true</item>
         <item name="android:windowAnimationStyle">@android:style/Animation</item>
     </style>
+
     <style name="SwipeBackLayout">
         <item name="edge_size">100dip</item>
         <item name="shadow_left">@mipmap/shadow_left</item>
         <item name="shadow_right">@mipmap/shadow_right</item>
         <item name="shadow_bottom">@mipmap/shadow_bottom</item>
     </style>
+
+    <style name="AppTheme.NoActionBar.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.NoActionBar.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
 </resources>

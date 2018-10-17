@@ -12,7 +12,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         Handler().postDelayed({
-ARouter.getInstance().build("/test/WanAndroidActivity").navigation()
+ARouter.getInstance().build("/test/wan").navigation()
         },3000)
     }
 }

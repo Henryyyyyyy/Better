@@ -2,8 +2,6 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.tess.lib_baseopensource">
 
-    <application>
-        <activity android:name="me.example.tess.lib_baseopensource.TestActivity"></activity>
-    </application>
+    <application></application>
 
 </manifest>

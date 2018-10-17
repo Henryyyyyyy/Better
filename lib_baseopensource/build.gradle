@@ -34,7 +34,7 @@ dependencies {
     api 'com.android.support:support-v4:27.0.2'
     api 'com.android.support:design:27.0.2'
 
-    //arouter
+    //arouter,用到route注解的都要加上annotationprocessor
     api 'com.alibaba:arouter-api:1.4.0'
     annotationProcessor 'com.alibaba:arouter-compiler:1.2.1'
 

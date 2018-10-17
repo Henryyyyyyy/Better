@@ -38,13 +38,18 @@
         <!-- android:resource="@xml/file_paths" /> -->
         <!-- </provider> -->
 
-        <activity android:name=".MainActivity">
+        <activity android:name=".MainActivity"></activity>
+        <activity android:name=".test.TesttActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".test.TestsecondActivity"
+            android:label="@string/title_activity_testsecond"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 
 </manifest>

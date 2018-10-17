@@ -3,7 +3,7 @@
     package="me.henry.wanandroid">
 
     <application>
-        <activity android:name=".WanAndroidActivity"></activity>
+        <activity android:name="me.henry.wanandroid.WanAndroidActivity"></activity>
     </application>
 
 </manifest>
