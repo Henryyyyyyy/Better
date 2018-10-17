@@ -1,3 +1,3 @@
 
-include ':app'
+include ':app', ':lib_baseopensource', ':lib_basemodel', ':lib_core', ':module_wanandroid'
 
